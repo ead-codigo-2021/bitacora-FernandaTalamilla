@@ -5,8 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+<article class="entry-card">
     <style>
+        .entry-card {
+            display: grid;
+            grid-template-areas: 200 px 1fr;
+            grid-template-rows: 100px auto 300px ;
+            grid-template-areas: 'image content navigation' 'navegador navigation' 'footer footer';
+            gap: 1.5rem;
+            margin: 0;
+        }
+
+        .entry-card img {
+           grid-area: img;
+        }
+
+
         #navegador ul{
             list-style-type: none;
             text-align: center;
@@ -93,4 +107,5 @@
     <div class="box">Tercera parte</div>
 </div>
 </body style>
+
 </html>
