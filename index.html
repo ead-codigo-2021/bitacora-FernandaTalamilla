@@ -4,108 +4,178 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<article class="entry-card">
-    <style>
-        .entry-card {
-            display: grid;
-            grid-template-areas: 200 px 1fr;
-            grid-template-rows: 100px auto 300px ;
-            grid-template-areas: 'image content navigation' 'navegador navigation' 'footer footer';
-            gap: 1.5rem;
-            margin: 0;
-        }
+    <title>Bitacora FT</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        .entry-card img {
-           grid-area: img;
-        }
+</head>
 
 
-        #navegador ul{
-            list-style-type: none;
-            text-align: center;
-        }
-        
-        #navegador li{
-            display: inline;
-            text-align: center;
-            margin: 0 10px 0 0;
-        }
-
-        #navegador li a{
-            padding: 2px 7px 2px 7px;
-            color:turquoise;
-            background-color: white;
-            border: 1px solid white;
-            text-decoration: none;
-        }
-
-        #navegador li a:hover{
-            background-color:transparent;
-            color:transparent
-        }
-        h1 {
-           background: turquoise;
-           color: white;
-           font-style: italic;
-           font-size: 40px;
-       }
-       h2 {
-           color:dodgerblue;
-           font-style: italic;
-           font-size: 23px;
-        }
-        h3 {
-           color:rgb(43, 46, 46);
-           font-style: italic;
-           font-size: 15px;
-       }
-
-       .container {
-           display: flex;
-           justify-content: center;
-           background-color:turquoise; 
-       }
-       .box {
-          font-style: italic;
-          font-size: 20px;
-          padding: 20px;
-          border: 2px solid turquoise; 
-       }
-    </style>
-
-<body style="background-color:yellow;">
-    <div id="navegador">
-        <ul>
-            <li><a href="#">Elemento 1</a></li>
-            <li><a href="#">Elemento 2</a></li>
-            <li><a href="#">Elemento 3</a></li>
-            <li><a href="#">Elemento 4</a></li>
-        </ul>
-    </div>
+<body>
     <header>
-    <h1>Hola mundo</h1> 
-    <h7>Fernanda Talamilla P</h7>
-    <div class="button">
-        Esta es mi bitácora personal para el ramo de Diseño desde el código.
-    </div> 
-    <img src="Foto1.jpeg"
-        height= "200" 
-        width="auto">   
+        <nav>
+            <a href="#intro">Introducción</a>
+            <a href="#Clases">Clases</a>
+            <a href="#Sobre">Sobre mí</a>
+            <a href="#proyecto">Proyecto final</a>
+    </nav>
+    <section class="textos-header">
+      <h1>Bitácora personal</h1>
+      <h2>Diseño desde el código 2021</h2>
+    </section>
+    <div class= "wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 353.00,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div>
     </header>
+
+    <main>
+    <section class="contenedor sobre-el-curso">
+        <h2 class="titulo" id="intro">Introducción</h2>
+        <div class="contenedor-sobre-el-curso">
+             <div class="contenido-textos">
+            <h3><span>1</span>El curso Diseño desde el Código</h3>
+            <p>El curso trata el diseño de códigos de interfaz para distintos medios y soportes digitales, es decir, la capa Front-end dentro de un proyecto digital. Los alumnos aprenderán a desarrollar proyectos digitales enfocándose en cómo estos se componen y construyen a través de un código limpio, claro y ordenado, utilizando lenguajes tales como HTML, CSS, SASS, Javascript entre otros.</p>
+            <h3><span>2</span>Unidades de aprendizaje</h3>
+            <p><ul>
+                    <li>Flujos y plan de trabajo en un proyecto digital</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>SASS</li>
+                    <li>Frameworks gráficos (Bootstrap, Foundation, Pure, etc)</li>
+                    <li>Flujos de trabajo y control de versiones (Git, Github, etc)</li>
+                    <li>Frameworks de contenidos (Wordpress)</li>
+                    <li>Diseño adaptable a múltiples formatos y soportes</li>
+                    <li>Principios de Javascript</p></li>
+                </ul>
+        </div>
+    </section> 
+    <section class="portafolio">
+        <div class="contenedor">
+            <h2 class="titulo" id="Clases">Clases</h2>
+            <div class="galeria-port">
+                <div class= "imagen-port">
+                <img src="Clase 1.jpeg" alt="">
+                <div class="hover-galeria">
+                 <p>1.Introducción al diseño front-end</p>
+                </div>
+                </div>
+
+                <div class= "imagen-port">
+                    <img src="Clase 2.jpeg" alt="">
+                    <div class="hover-galeria">
+                    <p>2. HTML</p>
+                    </div>
+                </div>
+
+                <div class= "imagen-port">
+                    <img src="Clase 3.jpeg" alt="">
+                    <div class="hover-galeria">
+                    <p>3. CSS</p>
+                    </div>
+                </div>
+                
+            
+                <div class= "imagen-port">
+                    <img src="Clase 5.jpeg" alt="">
+                    <div class="hover-galeria">
+                    <p>4. Tipografía y modelo de caja</p>
+                    </div>
+                </div>
+
+                <div class= "imagen-port">
+                    <img src="Clase 6.jpeg" alt="">
+                    <div class="hover-galeria">
+                    <p>5. Técnicas de diagramación</p>
+                    </div>
+                </div>
+
+                <div class= "imagen-port">
+                    <img src="Clase 4.jpeg" alt="">
+                    <div class="hover-galeria">
+                    <p>6. Grid</p>
+                    </div>
+                </div>
+
+                <div class= "imagen-port">
+                    <img src="Clase 7.jpeg" alt="">
+                    <div class="hover-galeria">
+                    <p>7. JS y preprocesadores</p>
+                    </div>
+                </div>
+
+                <div class= "imagen-port">
+                    <img src="Clase 8.jpeg" alt="">
+                    <div class="hover-galeria">
+                    <p>8. Accesibilidad y SEO</p>
+                    </div>
+                </div>
+
+                <div class= "imagen-port">
+                    <img src="Clase 9.jpeg" alt="">
+                    <div class="hover-galeria">
+                    <p>9. Proyecto final</p>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </section> 
+
+    <section class="cards">
+        <div class="contenedor">
+         <h2 class="titulo" id="Sobre">Sobre mi</h2>
+         <div class="cards">
+         <div class="card">
+         <img src="Foto1.jpeg" alt="">
+            <div class="contenido-texto-card">
+             <h4>Fernanda Talamilla Pino</h4>
+             <p>Estudiante de 4to año de Diseño de la PUCV. </p> 
+            </div>
+        </div>   
+        </div>
+        </div>
+        </section>
+        
+        <section class="about-services">
+        <div class="contenedor">
+          <h2 class="titulo" id="proyecto">Proyecto Final</h2>  
+          <div class="service-cont">
+             <div class="servicio-ind">
+                 <img src="Pag principal.jpeg" alt="">
+                 <h3>Página principal</h3>
+                 <p>En la página principal de Koldomus encontramos una barra de navegación desplegable, imagénes que se deslizan y la definición de lo que es Koldomus.</p> 
+             </div> 
+
+             <div class="servicio-ind">
+                <img src="Barra de navegacion.jpeg" alt="">
+                <h3>Barra de navegación</h3>
+                <p>La barra de navegación se despliega tipo menú hamburguesa y deja ver 5 titulos a los que se puede ingresar para ver la información que se busca.</p> 
+            </div> 
+
+            <div class="servicio-ind">
+                <img src="Criobiologia.jpeg" alt="">
+                <h3>Criobiología</h3>
+                <p>En esta página se describe lo que es la criobiología mediante una imagen central y texto.</p> 
+            </div> 
+          </div>
+        </div>  
+        </section>    
+    </main>
+
     <footer>
-        <h2>Presentación</h2>
-        <h3>Clase 1</h3>
-        <h3>Clase 2</h3>
-        <h3>Clase 3</h3>
-        <h3>Clase 4</h3>
+      <div class="contenedor-footer">
+       <div class="content-foo">
+        <h4>Mail</h4>
+        <p>fernandatalamilla36@gmail.com</p>   
+       </div> 
+       
+       <div class="content-foo">
+        <h4>Phone</h4>
+        <p>98654378</p>   
+       </div> 
+
+      </div> 
+      <h2 class="titulo-final">&copy; Fernanda T/ Bitácora personal</h2> 
     </footer>
-</header>
-<div class="container">
-    <div class="box">Primera parte</div>
-    <div class="box">Segunda parte</div>
-    <div class="box">Tercera parte</div>
-</div>
-</body style>
+</body>
 
 </html>
